@@ -1,0 +1,330 @@
+.channel {
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(20, 20, 27); */
+  padding-left: 7%;
+  /* padding-right: 2%; */
+}
+.ch-header {
+  width: 100%;
+  /* background-color: rgb(166, 109, 219); */
+  background: linear-gradient(45deg, red, blue);
+  height: 40%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-bottom-left-radius: 5px;
+}
+.ch-logo {
+  height: 170px;
+  width: 170px;
+  border-radius: 30%;
+  margin-left: 80px;
+  /* border: 4px white solid; */
+  /* background-color: white; */
+}
+.ch-logo > img {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  object-fit: cover;
+  box-shadow: 1px 1px 5px 2px rgba(254, 253, 253, 0.505);
+}
+.ch-verified {
+  color: rgb(0, 140, 255);
+  margin-left: 10px;
+}
+.ch-detail-name {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.ch-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.ch-icons {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ch-detail-icon {
+  font-size: 1.2rem;
+  position: relative;
+}
+.ch-detail-icon::before {
+  content: "fsdf";
+  position: absolute;
+}
+.ch-nft-detail {
+  padding: 0 20px;
+  display: flex;
+  height: 1.5rem;
+  /* background-color: blue; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.ch-nft-detail > div > h4 {
+  margin-left: 10px;
+  border-right: 1px grey solid;
+  padding-right: 20px;
+}
+.ch-nft-detail > div {
+  display: flex;
+  margin-right: 20px;
+}
+.polygon {
+  /* font-size: 0.6rem; */
+  height: 80%;
+  margin-left: 10px;
+  border-right: 1px grey solid;
+  padding-right: 20px;
+  align-self: center;
+}
+.ch-description-showless {
+  padding: 0 20px;
+  margin-top: 15px;
+  width: 70%;
+  color: rgb(67, 67, 67);
+  /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+.channelNftRoute {
+  display: flex;
+  border-bottom: 1px grey solid;
+}
+.channelNftRoute > div {
+  padding: 15px 50px;
+  font-weight: 500;
+  cursor: pointer;
+  color: grey;
+}
+.channelNftRoute > div:hover {
+  color: black;
+  border-bottom: 2px black solid;
+  transition: 0.2s ease-in-out;
+}
+.channelNft {
+  margin-top: 20px;
+  margin: 20px 20px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+}
+
+.channelItems {
+  width: 100%;
+  height: max-content;
+  padding: 10px;
+}
+.channelItmesNav {
+  height: 50px;
+  padding: 0 20px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  /* background: linear-gradient(45deg,pink,lightblue); */
+}
+.channel-search {
+  margin-left: 20px;
+  display: flex;
+  width: 40%;
+  align-items: center;
+  /* background-color: rgb(181, 180, 180); */
+  /* background-color: rgb(190, 190, 190); */
+  padding: 10px 20px;
+  /* border: 2px grey solid; */
+  border-radius: 50px;
+  color: grey;
+  box-shadow: 0px 0px 2px rgba(126, 126, 126, 0.788);
+}
+.channel-search > input {
+  border: none;
+  margin-left: 10px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: transparent;
+}
+.channel-search > input:focus {
+  outline: none !important;
+  border: none;
+}
+.channel-select {
+  margin-left: 20px;
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  font-size: 1rem;
+  /* padding: 0 20px; */
+  align-items: center;
+  box-shadow: 0px 0px 2px rgba(126, 126, 126, 0.788);
+}
+.channel-select-first {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.channel-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: max-content;
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+}
+.channel-options > div {
+  height: max-content;
+  padding: 5px 20px;
+}
+.channel-select-nfts {
+  /* width: 100%; */
+  width: 100%;
+  display: grid;
+  /* height: 80vh; */
+  /* margin: 20px; */
+  /* overflow-y: scroll; */
+  padding: 20px;
+  padding-right: 20px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  /* box-shadow: 1px 1px 5px grey ; */
+  border-radius: 10px;
+}
+.channel-select-nfts-card {
+  /* padding: 10px; */
+  border-radius: 10px;
+  /* width: 100px; */
+  height: 300px;
+  /* background-color: blue; */
+  box-shadow: 1px 1px 2px grey;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.channel-select-nfts-card > img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  /* border-radius: 5px; */
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: lightblue;
+}
+
+.channel-select-nfts-card > img:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
+}
+.channel-card-buy {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(0, 140, 255);
+  color: white;
+  justify-content: space-between;
+}
+.channel-card-p {
+  width: 100%;
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.channel-card-p > h3 {
+  margin-top: 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.channel-card-name {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px white solid;
+}
+.channel-card-cart {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.channel-card-cart-icon {
+  font-size: 1.5rem;
+  /* background-color: red; */
+}
+.channel-buy {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 80% 20%;
+  padding: 20px 10px;
+}
+.channel-status {
+  /* display: none; */
+  display: block;
+  /* margin-top: 20px; */
+  padding-top: ;
+  /* box-shadow: 2px 2px 4px grey; */
+  /* border: 2px grey solid; */
+  /* border: 3px gray solid; */
+  border-radius: 10px;
+  height: max-content;
+  overflow: hidden;
+}
+.channel-status > div,
+.channel-status > h4 {
+  /* margin-bottom: 20px; */
+  height: 60px;
+  display: flex;
+  /* justify-content: center; */
+  padding-left: 20px;
+  align-items: center;
+  /* padding: 20px; */
+  background-color: rgb(229, 229, 231);
+}
+.channel-status > div > input {
+  height: 60%;
+  border: none;
+  width: 60%;
+  box-shadow: 1px 1px 5px gray;
+  border-radius: 10px;
+  text-align: center;
+}
+.channel-status > div > input:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+/* .cha */
+.channel-status > p {
+  text-align: center;
+  background-color: rgb(229, 229, 231);
+}
+.channel-status > h4 {
+  /* border-bottom: 2px rgb(61, 60, 60) solid ; */
+  color: white;
+  background-color: rgb(74, 73, 73);
+}
+.channel-status > div:hover {
+  background-color: rgb(239, 240, 245);
+}
+.status-show {
+  display: none;
+}
+.form-select{
+  width: 100% !important;
+  height: 100%;
+  border-radius: inherit;
+}
